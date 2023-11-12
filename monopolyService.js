@@ -1,6 +1,3 @@
-/* eslint-disable no-template-curly-in-string */
-/* eslint-disable no-console */
-/* eslint-disable no-use-before-define */
 /**
  * This module implements a REST-inspired webservice for the Monopoly DB.
  * The database is hosted on ElephantSQL.
@@ -13,8 +10,6 @@
  * which would delete records in the PlayerGame and then the Player tables.
  * In particular, we don't use JS template strings because it doesn't filter
  * client-supplied values properly.
- * TODO: Consider using Prepared Statements.
- *      https://vitaly-t.github.io/pg-promise/PreparedStatement.html
  *
  * This service assumes that the database connection strings and the server mode are
  * set in environment variables. See the DB_* variables used by pg-promise. And
@@ -22,6 +17,7 @@
  * server error responses for all errors.
  *
  * @author: kvlinden
+ * @author: jgc23
  * @date: Summer, 2020
  */
 
